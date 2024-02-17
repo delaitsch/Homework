@@ -1,0 +1,66 @@
+---
+title: "Homework 2"
+author: "Jeff DeLaitsch"
+date: "2024-02-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+Problem 1
+
+```{r}
+tribble( ~x, ~y,    ~w,    ~z,
+210,   300,   220,   180,
+102,   100,   119,   187,
+176,   175,   188,   173,
+87,    95,   91,     94,
+202,   210,  234,    218,
+110,   122,  131,    128,
+) -> dt
+
+dt
+```
+1A
+```{r}
+dt %>% 
+  map(mean)
+```
+1B
+```{r}
+dt %>% 
+  map(sd)
+```
+1C
+```{r}
+dt %>% 
+  map(sqrt)
+```
+1D
+```{r}
+dt %>% 
+map(mean)
+
+dt %>% 
+map(max)
+
+dt %>% 
+map(quantile(1))
+
+dt %>% 
+map(quantile(3))
+
+dt %>% 
+  map(median)
+
+dt %>% 
+  map(min)
+```
+Problem 2
+```{r}
+
+```
+
